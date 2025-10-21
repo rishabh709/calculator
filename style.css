@@ -6,7 +6,7 @@
 body{
     background-color: #f3f3f3;
     font-family: sans-serif;
-    height: 100dvh;
+    height: 100ddvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@ body{
 .main-container{
     display: flex;
     width: 70dvw;
-    height: 70vh;
+    height: 70dvh;
     /* border: 2px solid #1d1d1d3f; */
     border-radius: 12px;
     box-shadow: 4px 0px 50px #1d1d1d3f;
@@ -40,7 +40,7 @@ body{
 
 .num-pad, .operators{
     color: #5e5e5e;
-    /* height: 100vh; */
+    /* height: 100dvh; */
     /* background-color: blueviolet; */
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +134,7 @@ body{
 }
 .controller > div {
     flex-grow: 1;
-    height: 10vh;
+    height: 10dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,12 +144,12 @@ body{
 @media (orientation: portrait) {
     .main-container{
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
         flex-direction: column;
     }
     .screen, .output{
         width: 100%;
-        height: 30vh;
+        height: 30dvh;
     }
     .output > * {
         padding: 5px 20px;
