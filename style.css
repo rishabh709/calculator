@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: sans-serif;
+}
+.main-container{
+    display: flex;
+    width: 100dvw;
+    height: 100vh;
+}
+.screen, .buttons {
+    width: 50%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+.pad{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+}
+
+.num-pad, .operators{
+    color: #5e5e5e;
+    /* height: 100vh; */
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.num-pad{
+    flex-grow: 1;
+    flex-direction: wrap;
+    font-size: 20px;
+}
+.operators{
+    width: max-content;
+    flex-direction: column;
+    font-weight: bold;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+
+    /* font-size: 2vw; */
+}
+.num-pad :last-child{
+    font-size: 32px;
+}
+.num-pad > * {
+    /* aspect-ratio: 1 / 1 ; */
+    background-color: #f1f1f1;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.operators > *{
+    width: max-content;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.num-pad > *{
+    width: calc( 30% );
+}
+
+.num-pad >div:hover{
+    background-color: #ffffff;
+}
+.operators>div:hover, .num-pad :last-child:hover, .controller :hover {
+    /* background-color: #dadafc; */
+    background-color: #b0c9ff;
+
+}
+.buttons {
+    padding: 10px 20px;
+}
+
+
+.screen{
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #3b3b3b;
+
+}
+.output{
+    background-color: #b0c9ff;
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.controller{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.backspace > img {
+    height: 30%;
+}
+.controller > div {
+    flex-grow: 1;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
