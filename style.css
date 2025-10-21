@@ -6,15 +6,23 @@
 body{
     background-color: #f3f3f3;
     font-family: sans-serif;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-container{
     display: flex;
-    width: 100dvw;
-    height: 100vh;
+    width: 70dvw;
+    height: 70vh;
+    /* border: 2px solid #1d1d1d3f; */
+    border-radius: 12px;
+    box-shadow: 4px 0px 50px #1d1d1d3f;
 }
 .screen, .buttons {
     width: 50%;
-    height: 100vh;
+    height: 100%;
+    
     /* background-color: red; */
 }
 
@@ -98,6 +106,7 @@ body{
     align-items: center;
     font-size: 20px;
     color: #3b3b3b;
+    /* border-radius: 12px; */
 
 }
 .output{
@@ -105,6 +114,11 @@ body{
     width: 100%;
     height: 100%;
     padding: 2% 5%;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+}
+.output > * {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -124,4 +138,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (orientation: portrait) {
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .screen, .output{
+        width: 100%;
+        height: 30vh;
+    }
+    .output > * {
+        padding: 5px 20px;
+
+    }
+    .buttons{
+        width: 100vw;
+    }
+    
 }
